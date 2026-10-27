@@ -2,10 +2,7 @@
     <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-                <div class="flex items-center gap-2">
-                    <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-primary font-display text-lg font-bold text-ink">P</span>
-                    <span class="font-display text-xl font-bold text-ink">Pasarin</span>
-                </div>
+                <x-logo size="h-9 w-9" text="text-xl text-ink" />
                 <p class="mt-3 text-sm text-ink/60">Marketplace yang menghubungkan penjual lokal dengan pembeli, di mana saja.</p>
             </div>
 

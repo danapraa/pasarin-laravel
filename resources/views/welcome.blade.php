@@ -1,6 +1,9 @@
 <x-app-layout>
-    <section class="relative overflow-hidden bg-tint-yellow">
-        <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24 lg:px-8">
+    <section class="relative overflow-hidden bg-tint-yellow"
+         style="background-image: url('{{ asset('images/background.jpg') }}'); background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-gradient-to-r from-cream via-cream/90 to-cream/20"></div>
+
+    <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24 lg:px-8">
             <div>
                 <span class="inline-flex items-center gap-2 rounded-pill bg-white px-4 py-1.5 text-sm font-semibold text-secondary shadow-sm">
                     Marketplace lokal, ramai tiap hari
@@ -22,49 +25,17 @@
 
                 <div class="mt-10 flex gap-8">
                     <div>
-                        <p class="font-display text-3xl font-bold text-ink">2.500+</p>
+                        <p class="font-display text-3xl font-bold text-ink">2</p>
                         <p class="text-sm text-ink/60">Penjual aktif</p>
                     </div>
                     <div>
-                        <p class="font-display text-3xl font-bold text-ink">40rb+</p>
+                        <p class="font-display text-3xl font-bold text-ink">3</p>
                         <p class="text-sm text-ink/60">Produk tersedia</p>
                     </div>
                     <div>
                         <p class="font-display text-3xl font-bold text-ink">98%</p>
                         <p class="text-sm text-ink/60">Pesanan tepat waktu</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="relative hidden h-[420px] lg:block">
-                <div class="card-stall absolute left-4 top-0 w-48 rotate-[-6deg]">
-                    <div class="absolute -left-3 -top-3 z-10 rotate-[-4deg]">
-                        <x-pennant color="primary">Baru</x-pennant>
-                    </div>
-                    <div class="h-28 rounded-2xl bg-tint-teal"></div>
-                    <p class="mt-3 font-display text-sm font-bold">Kopi Susu Gula Aren</p>
-                    <p class="text-xs text-ink/50">Toko Kopi Rukun</p>
-                </div>
-
-                <div class="card-stall absolute right-8 top-10 w-52 rotate-[5deg]">
-                    <div class="absolute -right-3 -top-3 z-10 rotate-[4deg]">
-                        <x-pennant color="secondary">Terlaris</x-pennant>
-                    </div>
-                    <div class="h-32 rounded-2xl bg-primary-light"></div>
-                    <p class="mt-3 font-display text-sm font-bold">Batik Tulis Madura</p>
-                    <p class="text-xs text-ink/50">Toko Sari Kain</p>
-                </div>
-
-                <div class="card-stall absolute bottom-0 left-16 w-48 rotate-[4deg]">
-                    <div class="h-28 rounded-2xl bg-accent/15"></div>
-                    <p class="mt-3 font-display text-sm font-bold">Keripik Singkong Pedas</p>
-                    <p class="text-xs text-ink/50">Dapur Bu Ida</p>
-                </div>
-
-                <div class="card-stall absolute bottom-6 right-0 w-44 rotate-[-3deg]">
-                    <div class="h-24 rounded-2xl bg-secondary-light/30"></div>
-                    <p class="mt-3 font-display text-sm font-bold">Tas Rajut Handmade</p>
-                    <p class="text-xs text-ink/50">Rajut Nusantara</p>
                 </div>
             </div>
         </div>

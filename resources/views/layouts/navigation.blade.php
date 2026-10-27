@@ -1,10 +1,8 @@
 <nav class="sticky top-0 z-50 border-b-2 border-ink/5 bg-cream/90 backdrop-blur">
     <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="{{ route('welcome') }}" class="flex items-center gap-2">
-            <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-primary font-display text-xl font-bold text-ink">P</span>
-            <span class="font-display text-2xl font-bold text-ink">Pasarin</span>
-        </a>
-
+        <a href="{{ route('welcome') }}">
+    <x-logo />
+</a>
         <div class="hidden flex-1 max-w-md items-center md:flex mx-8">
             <form action="{{ route('welcome') }}" method="GET" class="relative w-full">
                 <input type="text" name="q" placeholder="Cari produk favoritmu..." value="{{ request('q') }}"

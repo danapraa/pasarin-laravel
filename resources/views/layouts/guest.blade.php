@@ -14,10 +14,9 @@
 <body class="bg-cream font-sans text-ink antialiased">
     <div class="flex min-h-screen">
         <div class="relative hidden w-1/2 flex-col justify-between overflow-hidden bg-secondary p-12 lg:flex">
-            <a href="{{ route('welcome') }}" class="relative z-10 flex items-center gap-2">
-                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary font-display text-2xl font-bold text-ink">P</span>
-                <span class="font-display text-2xl font-bold text-white">Pasarin</span>
-            </a>
+            <a href="{{ route('welcome') }}" class="relative z-10">
+    <x-logo size="h-11 w-11" text="text-2xl text-white" />
+</a>
 
             <div class="relative z-10 max-w-sm">
                 <h2 class="font-display text-4xl font-bold leading-tight text-white">
@@ -44,10 +43,9 @@
 
         <div class="flex w-full flex-col items-center justify-center px-6 py-12 lg:w-1/2">
             <div class="w-full max-w-sm">
-                <a href="{{ route('welcome') }}" class="mb-8 flex items-center gap-2 lg:hidden">
-                    <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-primary font-display text-xl font-bold text-ink">P</span>
-                    <span class="font-display text-2xl font-bold text-ink">Pasarin</span>
-                </a>
+                <a href="{{ route('welcome') }}" class="mb-8 block lg:hidden">
+    <x-logo />
+</a>
 
                 {{ $slot }}
             </div>
